@@ -1,3 +1,5 @@
+# Bot Discord qui sert d'interface entre l'API et Discord
+
 import discord
 from discord.ext import commands
 import random
