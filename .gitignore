@@ -60,5 +60,5 @@ typings/
 # next.js build output
 .next
 
-# Python discord bot token
-token.py
+# Pygrosse mere discord bot token
+*token.py
