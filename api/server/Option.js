@@ -6,4 +6,14 @@ class Option{
         this.description = "";
     }
 
+    add(){}
+
+    remove(){}
+
+    vote(){}
+
+    participe(){}
+
+    a_payé(){}
+
 }
