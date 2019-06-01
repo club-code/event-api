@@ -9,6 +9,7 @@ class Event{
         this.nom = "";
         this.lieu = "";
         this.options = [];
+        this.id = "";
     }
 
 }
