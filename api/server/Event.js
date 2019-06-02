@@ -6,52 +6,81 @@ class Event{
         this.description = "";
         this.group = new Group();
         this.tags = [];
-        this.nom = "";
-        this.lieu = "";
+        this.name = "";
+        this.location = "";
         this.options = [];
-        this.id = "";
+        //this.id = "";
     }
 
-    list(){}
+    //list(){}
 
-    add(){}
+    //add(){}
 
-    remove(){}
+    //remove(){}
 
-    display(){}
+    //display(){}
 
-    search(){}
+    toString(){
+        return `${this.name} | ${this.date} | ${this.location}
+            ${this.tags.toString()}
+            ${this.options}`;
+    }
 
-    date_set(date){
+    //search(){}
+
+    setDate(date){
       this.date = date;
     }
 
-    date_remove(){
+    getDate(){
+        return this.date;
+    }
+
+    removeDate(){
       this.date = "";
     }
 
-    description_set(description){
+    setDescription(description){
       this.description = description;
     }
 
-    description_remove(){
+    getDescription(){
+        return this.description;
+    }
+
+    removeDescription(){
       this.description = "";
     }
 
-    tag_set(tag){
+    addTag(tag){
       this.tags.append(tag);
     }
 
-    tag_remove(){
-      this.tags.pop(tag);
+    getTags(){
+        return this.tags;
     }
 
-    lieu_set(lieu){
-      this.lieu = lieu;
+    removeTag(tag){
+      this.tags.splice(this.tags.indexOf(tag),1);
     }
 
-    lieu_remove(){
-      this.lieu = "";
+    setLocation(location){
+      this.location = location;
     }
 
+    removeLocation(){
+      this.location = "";
+    }
+
+    addOption(option){
+        this.options.append(option);
+    }
+
+    getOptions(){
+        return this.options;
+    }
+
+    removeOption(option){
+        this.options.splice(this.options.indexOf(option));
+    }
 }

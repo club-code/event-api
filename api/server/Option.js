@@ -6,9 +6,9 @@ class Option{
         this.description = "";
     }
 
-    add(){}
+    //add(){}
 
-    remove(){}
+    //remove(){}
 
     vote(){}
 
